@@ -25,9 +25,15 @@ var fullName = function (name) {
 };
 var heros = ["thor", "marvel", "chondu", 1, true];
 heros.map(function (hero) {
-    console.log("hero iz : ".concat(hero));
     return "hero iz : ".concat(hero);
 });
 console.log(fullName("Prajwal"));
 console.log(getNumber(5));
-console.log(heros);
+// it means that the function returns nothing
+function consoleError(errMsg) {
+    console.log(errMsg);
+}
+// it means that the function throws an exception or terminates the program
+function handleError(errMsg) {
+    throw new Error(errMsg);
+}
